@@ -1,2 +1,2 @@
-Homework №2 Python
+Hometasks with Python
 
