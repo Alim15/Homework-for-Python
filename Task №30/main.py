@@ -18,20 +18,18 @@ for i in range(n):
 Задача 32: Определить индексы элементов массива (списка), 
 значения которых принадлежат заданному диапазону
  (т.е. не меньше заданного минимума и не больше заданного максимума)
-"""
-
-
-from random import randint
-
-def Bubble_sorting_list(rand_list):
-    for i in rand_list(len(rand_list)-1):
-        for j in rand_list(len(rand_list)-i-1):
-            if rand_list[j] > rand_list[j + 1]:
-                rand_list[j], rand_list[j + 1] = rand_list[j + 1], rand_list[j]
-                print(rand_list, 'end=')
-
-
-#
+ 
+# from random import randint
+# 
+# def Bubble_sorting_list(rand_list):
+#     for i in rand_list(len(rand_list)-1):
+#         for j in rand_list(len(rand_list)-i-1):
+#             if rand_list[j] > rand_list[j + 1]:
+#                 rand_list[j], rand_list[j + 1] = rand_list[j + 1], rand_list[j]
+#                 print(rand_list, 'end=')
+# 
+# 
+# 
 # lower=int(input("Введите нижнюю границу рандомайзера: "))
 # upper=int(input("Введите верхнюю границу рандомайзера: "))
 # rand_list=[]
@@ -43,3 +41,4 @@ def Bubble_sorting_list(rand_list):
 #     print(rand_list)
 #
 # Bubble_sorting_list(rand_list)
+"""
