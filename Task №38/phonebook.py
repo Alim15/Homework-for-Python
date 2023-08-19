@@ -1,23 +1,19 @@
-def creating ():
-    file = 'phonebook.txt'
-    with open (file, 'w', encoding = 'utf-8') as data:
-        data.write(f'Фамилия; Имя; Номер телефона\n')
 
 def initialization():
-    with open ('phonebook.txt', 'a', encoding ='utf-8') as data:
-        data.write('Лобачевский Николай Иванович')
-        data.write('Курчатов Игорь Васильевич')
-        data.write('Ломоносов Михаил Васильевич')
+    with open('phonebook.txt', 'a', encoding ='utf-8') as data:
+        data.write('Лобачевский Николай Иванович\n')
+        data.write('Курчатов Игорь Васильевич\n')
+        data.write('Ломоносов Михаил Васильевич\n')
 
 
-def add_information():
+def add_information(str):
     name=input("Введите имя:")
     surname=input("Введите фамилию:")
     phonenumber=input("Введите номер телефона")
     while not phonenumber.isdigit():
         phonenumber = input("Введите номер телефона")
     str=f'{name} {surname} {phonenumber} \n'
-    with open('phonebook.txt', 'r', encoding='utf-8') as data:
+    with open('phonebook.txt', 'w+', encoding='utf-8') as data:
         data.write(str)
 
 
